@@ -25,14 +25,14 @@
             <div class="col-4 border bg-secondary text-dark bg-opacity-10">
                 <div class="text-center">
                     <h4>Income</h4>
-                    <p class="p-2 fw-bolder">Income:<input type="text" placeholder="Please input number"></p>
+                    <p class="p-2 fw-bolder">Income:<input id="salary-amount" type="text" placeholder="Please input number"></p>
                     <h4>Expencess</h4>
-                    <p class="p-2 fw-bolder">Food: <input type="text" placeholder="Please input number"></p>
-                    <p class="p-2 fw-bolder">Rent: <input type="text" placeholder="Please input number"></p>
-                    <p class="p-2 fw-bolder">Clothes: <input type="text" placeholder="Please input number"></p>
-                    <button type="button" class="btn btn-primary btn-lg px-5 fw-bold">Calculate</button>
-                    <h4>Total Expenses: <span>00</span></h4>
-                    <h4>Balance: <span>00</span></h4>
+                    <p class="p-2 fw-bolder">Food: <input id="food-amount" type="text" placeholder="Please input number"></p>
+                    <p class="p-2 fw-bolder">Rent: <input id="rent-amount" type="text" placeholder="Please input number"></p>
+                    <p class="p-2 fw-bolder">Clothes: <input id="clothes-amount" type="text" placeholder="Please input number"></p>
+                    <button onclick="expenseCalculate()" type="button" class="btn btn-primary btn-lg px-5 fw-bold">Calculate</button>
+                    <h4>Total Expenses: <span id="total-expense">00</span></h4>
+                    <h4>Balance: <span id="balance">00</span></h4>
                     <p class="p-2 fw-bolder">Saves: <input type="text" placeholder="Please input percentage">%
                         <button type="button" class="btn btn-primary  px-5 fw-bold">Save</button>
                     </p>
