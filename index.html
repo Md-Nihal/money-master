@@ -13,37 +13,39 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="mt-8 my-8">
-        <div>
+    <!-- header of the website -->
+    <header class=" my-8">
+        <div class="col-12">
             <h1 class="fs-1 text-center text-info">Monthly Wage & Expense Calculator</h1>
         </div>
             </header>
     <section class="container">
-        <div class="row">
-            <div class="col-8">
-                <img src="img/Money cal.jpg" alt="">
+        <div class="row p-2" >
+            <div class="col-12 col-lg-6 mt-2">
+                <img class="img-fluid" src="img/Money cal.jpg" alt="">
             </div>
-            <div class="col-4 border bg-secondary text-dark bg-opacity-10">
+            <div class=" col-12 col-lg-6 border-0 bg-green-100 text-dark mt-2 p-3">
                 <div class="text-center">
-                    <h4>Income</h4>
-                    <p class="p-2 fw-bolder">Income:<input id="salary-amount" type="text" placeholder="Please input number"></p>
+                    <h4 class="fw-bolder ">Income</h4>
+                    <p class="p-2">Income:   <input class="p-2 border border-dark rounded" id="salary-amount" type="text" placeholder="Please input number"></p>
                     <p id="error"> Please enter a positive & numeric amount.</p>
-                    <h4>Expencess</h4>
-                    <p class="p-2 fw-bolder">Food: <input id="food-amount" type="text" placeholder="Please input number"></p>
-                    <p id="error-food" > Please enter a positive & numeric food amount.</p>
-                    <p class="p-2 fw-bolder">Rent: <input id="rent-amount" type="text" placeholder="Please input number"></p>
+                    <h4 class="fw-bolder">Expenses</h4>
+                    <p class="p-2">Food: <input class="p-2 rounded border border-dark" id="food-amount" type="text" placeholder="Please input number"></p>
+                    <p id="error-food" > Please enter a positive & numeric amount.</p>
+                    <p class="p-2 ">Rent: <input class="p-2 rounded border border-dark" id="rent-amount" type="text" placeholder="Please input number"></p>
                     <p id="error-rent" > Please enter a positive & numeric amount.</p>
-                    <p class="p-2 fw-bolder">Clothes: <input id="clothes-amount" type="text" placeholder="Please input number"></p>
+                    <p class="p-2">Clothes: <input class="p-2 rounded border border-dark" id="clothes-amount" type="text" placeholder="Please input number"></p>
                     <p id="error-clothes" > Please enter a positive & numeric amount.</p>
-                    <button onclick="expenseCalculate()" type="button" class="btn btn-primary btn-lg px-5 fw-bold">Calculate</button>
-                    <h4>Total Expenses: <span id="total-expense">00</span></h4>
-                    <h4>Balance: <span id="balance">00</span></h4>
-                    <p class="p-2 fw-bolder">Saves: <input id="save-amount" type="text" placeholder="Please input percentage">%
-                        <button onclick="saveParchentage()" type="button" class="btn btn-primary  px-5 fw-bold">Save</button>
+                    <button onclick="expenseCalculate()" type="button" class="btn btn-primary btn-lg p-2 px-5 fw-bold">Calculate</button>
+                    <p id="over-expense"> You can't spent more then your income.</p>
+                    <h4 class="fw-bolder">Total Expenses: <span id="total-expense">00</span></h4>
+                    <h4 class="fw-bolder">Balance: <span id="balance">00</span></h4>
+                    <p class="p-2 ">Saves: <input class="p-2 rounded border border-dark" id="save-amount" type="text" placeholder="Please input percentage"> %
+                    <button onclick="saveParchentage()" type="button" class="btn btn-primary pt-2 px-5 fw-bold">Save</button>
                     </p>
                     <p id="save-error">You haven't sufficient Balance to save.</p>
-                    <h4>Saving Amount: <span id="save-balance">00</span></h4>
-                    <h5>Remaining Balance: <span id="rest-balance">00</span></h5>
+                    <h4 class="fw-bolder">Saving Amount: <span id="save-balance">00</span></h4>
+                    <h5 class="fw-bolder">Remaining Balance: <span id="rest-balance">00</span></h5>
                 </div>
             </div>
         </div>

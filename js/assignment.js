@@ -9,30 +9,30 @@ function expenseCalculate(){
     var getFoodAmount = inputData('food');
     var getRentAmount = inputData('rent');
     var getClothesAmount = inputData('clothes');
+    var totalExpense = getFoodAmount + getRentAmount + getClothesAmount;
+        var totalExpense = getFoodAmount + getRentAmount + getClothesAmount;
 
     if (isNaN(salaryAmount) || salaryAmount < 0){
         var errorMassage = document.getElementById('error');
-        errorMassage.style.display = 'block';
-        
+        errorMassage.style.display = 'block'; 
     }
     else if (isNaN(getFoodAmount) || getFoodAmount < 0){
-        var errorMassageClothes = document.getElementById('error-food');
+        var errorMassageFood = document.getElementById('error-food');
         errorMassageFood.style.display = 'block';
-
     }
     else if (isNaN(getRentAmount) || getRentAmount < 0){
         var errorMassageRent = document.getElementById('error-rent');
         errorMassageRent.style.display = 'block';
-
     }
     else if (isNaN(getClothesAmount)  || getClothesAmount < 0){
         var errorMassageClothes = document.getElementById('error-clothes');
         errorMassageClothes.style.display = 'block';
-
     }
-   
+    else if(totalExpense > salaryAmount){
+        var overExpense = document.getElementById('over-expense');
+        overExpense.style.display = 'block';
+    }
     else{
-        var totalExpense = getFoodAmount + getRentAmount + getClothesAmount;
         var allTotalExpense = document.getElementById('total-expense');
         allTotalExpense.innerText = totalExpense;
         var totalBalance  = document.getElementById('balance');
