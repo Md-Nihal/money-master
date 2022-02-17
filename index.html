@@ -20,15 +20,19 @@
         </div>
             </header>
     <section class="container">
+        <!-- image added -->
         <div class="row p-2" >
             <div class="col-12 col-lg-6 mt-2">
                 <img class="img-fluid" src="img/Money cal.jpg" alt="">
             </div>
+        <!-- calculating part -->
             <div class=" col-12 col-lg-6 border-0 bg-green-100 text-dark mt-2 p-3">
                 <div class="text-center">
+                    <!-- income part -->
                     <h4 class="fw-bolder ">Income</h4>
                     <p class="p-2">Income:   <input class="p-2 border border-dark rounded" id="salary-amount" type="text" placeholder="Please input number"></p>
                     <p id="error"> Please enter a positive & numeric amount.</p>
+                    <!-- expenses part -->
                     <h4 class="fw-bolder">Expenses</h4>
                     <p class="p-2">Food: <input class="p-2 rounded border border-dark" id="food-amount" type="text" placeholder="Please input number"></p>
                     <p id="error-food" > Please enter a positive & numeric amount.</p>
@@ -38,12 +42,15 @@
                     <p id="error-clothes" > Please enter a positive & numeric amount.</p>
                     <button onclick="expenseCalculate()" type="button" class="btn btn-primary btn-lg p-2 px-5 fw-bold">Calculate</button>
                     <p id="over-expense"> You can't spent more then your income.</p>
+                    <!-- total expense and left balance -->
                     <h4 class="fw-bolder">Total Expenses: <span id="total-expense">00</span></h4>
                     <h4 class="fw-bolder">Balance: <span id="balance">00</span></h4>
+                    <!-- save parchentage Button  -->
                     <p class="p-2 ">Saves: <input class="p-2 rounded border border-dark" id="save-amount" type="text" placeholder="Please input percentage"> %
                     <button onclick="saveParchentage()" type="button" class="btn btn-primary pt-2 px-5 fw-bold">Save</button>
                     </p>
                     <p id="save-error">You haven't sufficient Balance to save.</p>
+                    <!-- main balance -->
                     <h4 class="fw-bolder">Saving Amount: <span id="save-balance">00</span></h4>
                     <h5 class="fw-bolder">Remaining Balance: <span id="rest-balance">00</span></h5>
                 </div>

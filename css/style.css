@@ -1,28 +1,34 @@
+/* salary eror */
 #error {
     color: red;
     display: none;
 }
 
+/* food costing error */
 #error-food {
     color: red;
     display: none;
 }
 
+/* rent costing error */
 #error-rent {
     color: red;
     display: none;
 }
 
+/* Clothes costing error */
 #error-clothes {
     color: red;
     display: none;
 }
 
+/* parchentage error */
 #save-error {
     color: red;
     display: none;
 }
 
+/* Over expense error */
 #over-expense {
     color: red;
     display: none;
